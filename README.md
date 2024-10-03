@@ -12,3 +12,11 @@ Simple Bank operations with customers transactions loans and investments.
    2.2 Defined cluster subnet group, attached to VPC created above
 3. Security VPC group:
   3.1 Added a new inbound and outbound rule to the security VPC group, notably: Redshift access and my IP address.
+4. Created S3 bucket.
+   4.1 Created folders which are representing every table of logical schema. This is needed for crawler to create physical schema. One S3 bucket folder == table.
+   4.2 Uploaded data to S3.
+6. Created AWS Glue crawler to create metadata for physical model:
+   5.1 Added cliffier to highlight separator in CSVs as "|".
+   5.2 Created IAM role for crawler.
+   5.3 Created dev database for crawler.
+   5.4 Ran crawler. 14 new tables created in Glue Database. 
