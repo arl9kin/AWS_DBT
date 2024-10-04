@@ -19,4 +19,7 @@ Simple Bank operations with customers transactions loans and investments.
    5.1 Added cliffier to highlight separator in CSVs as "|".
    5.2 Created IAM role for crawler.
    5.3 Created dev database for crawler.
-   5.4 Ran crawler. 14 new tables created in Glue Database. 
+   5.4 Ran crawler. 14 new tables created in Glue Database.
+7. Validated schemas and data population using Athena.
+8. Loaded data to Redshift bronze layer using CREATE EXTERNAL SCHEMA FROM DATA CATALOG.
+   8.1 Validate data availability.
