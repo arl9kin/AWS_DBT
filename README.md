@@ -25,3 +25,8 @@ Simple Bank operations with customers transactions loans and investments.
 8. Validated schemas and data population using Athena.
 9. Loaded data to Redshift bronze layer using CREATE EXTERNAL SCHEMA FROM DATA CATALOG.
    8.1 Validate data availability.
+### DBT
+10. Install dbt-redshift package on local machine. And inititialize a dbt project and establish a connection to Redshift.
+    10.1 dbt init - initializes dbt project
+    10.2 dbt debug - helps to identify issues with connection
+    10.3 Noticed ubuntu machine didn't connected to the database. Went back to 3.1 and added ubuntu IP to security VPC group. 
